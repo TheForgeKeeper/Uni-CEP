@@ -1,15 +1,15 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class QuestionManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public List<GameObject> questions = new List<GameObject>();
 
-    // Update is called once per frame
-    void Update()
+    private int currentQuestionIndex = -1;
+    private GameObject currentQuestionObject;
+    private IQuestion currentQuestion;
+
+    private void nextQuestion(ref int currentIndex)
     {
         
     }
