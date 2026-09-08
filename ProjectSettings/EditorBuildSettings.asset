@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Home.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Instagram.unity
+    guid: fd772d9104191e84e9f8e216a36bae62
+  - enabled: 1
+    path: Assets/Scenes/Socials Sub.unity
+    guid: d9e9e5f8691aedb4e92f7565c12ee09e
+  - enabled: 1
+    path: Assets/Scenes/Twitter.unity
+    guid: 00ad3ab79a33d65478712755b4ae6f01
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
