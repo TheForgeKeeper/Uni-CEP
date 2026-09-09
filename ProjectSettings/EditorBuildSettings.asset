@@ -17,6 +17,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Twitter.unity
     guid: 00ad3ab79a33d65478712755b4ae6f01
+  - enabled: 1
+    path: Assets/Scenes/Chrome.unity
+    guid: b8a31a55982bdc1458711db0276166b7
+  - enabled: 1
+    path: Assets/Scenes/Github.unity
+    guid: 3448a987915bd164384ff29f42fb2686
+  - enabled: 1
+    path: Assets/Scenes/Whatsapp.unity
+    guid: 50a6addfa3adeff4db1e9d73a19d8bbc
+  - enabled: 1
+    path: Assets/Scenes/LinkedIn.unity
+    guid: cf5ab5f603347064781ccc83ac219a69
+  - enabled: 1
+    path: Assets/Scenes/Professional Sub.unity
+    guid: c8f1b02d5e755e045addf1ff06f648f8
+  - enabled: 1
+    path: Assets/Scenes/Browsers Sub.unity
+    guid: c5b26465d49a6b84cbde6cdf05570f8d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

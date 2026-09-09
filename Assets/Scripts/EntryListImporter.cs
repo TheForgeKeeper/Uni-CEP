@@ -35,20 +35,20 @@ public class EntryListImporter : MonoBehaviour
     public void RealizeEntries()
     {
         int entries = 0;
-        for(int i = 0; i < entriesData.Count; i++)
+        for (int i = 0; i < entriesData.Count; i++)
         {
             EntryData entry = entriesData[i];
-            if(filters.Contains(entry.filter) == false) continue;
+            if (filters.Contains(entry.filter) == false) continue;
 
             GameObject entryGO = PrefabUtility.InstantiatePrefab(EntryPrefab) as GameObject;
             entryGO.transform.SetParent(EntryListParent, false);
             float entryRectHeight = entryGO.GetComponent<RectTransform>().rect.height;
             float entryY = (-entries * (entryRectHeight + distanceBetweenEntries)) - entriesPadding;
-            entryGO.GetComponent<RectTransform>().anchoredPosition = new Vector2(0,entryY);
+            entryGO.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, entryY);
             EntryController entryController = entryGO.GetComponent<EntryController>();
             entryController.SetTitle(entry.title);
             entryController.SetDescription(entry.description);
-            for(int j = 0;j < 5; j++)
+            for (int j = 0; j < 5; j++)
             {
                 if (j < entry.steps.Length)
                 {
@@ -86,6 +86,16 @@ public class EntryListImporter : MonoBehaviour
         }
     }
 
+    public string[] GetEntryDescriptions()
+    {
+        string[] descriptions = entriesData.Select(entry => entry.description).ToArray();
+        return descriptions;
+    }
+
+    public string[] GetFilters()
+    {
+        return entriesData.Select(entry => entry.filter).Distinct().ToArray();
+    }
 
     [System.Serializable]
     struct EntryData
